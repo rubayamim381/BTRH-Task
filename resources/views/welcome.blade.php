@@ -65,26 +65,6 @@
             </div>
         </nav>
 
-
-        {{-- <div class="row p-2">
-            @if (Route::has('login'))
-                <div class="col-xl-12 col-lg-12 col-sm-12">
-                    @auth
-                        <a href="{{ url('/home') }}"
-                            class="text-decoration-none float-end float-sm-end float-md-end float-lg-end float-xl-end float-xxl-end">Home</a>
-                    @else
-                        <a href="{{ route('login') }}"
-                            class="text-decoration-none float-end float-sm-end float-md-end float-lg-end float-xl-end float-xxl-end">Log
-                            in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}"
-                                class="text-decoration-none float-end float-sm-end float-md-end float-lg-end float-xl-end float-xxl-end me-3">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-        </div> --}}
     </section>
 
     <section>
