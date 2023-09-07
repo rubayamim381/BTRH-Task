@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\AuthResource;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,4 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
+Route::get('/profile/{id}', [App\Http\Controllers\ProfilesController::class, 'index',])->middleware(AuthResource::class)->name('profile.show');

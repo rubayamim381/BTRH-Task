@@ -36,9 +36,9 @@
                         @if (Route::has('login'))
                             @auth
                                 <li class="nav-item">
-                                    <a href="{{ route('profile.show', ['user' => Auth::user()]) }}"
+                                    <a href="{{ route('profile.show', ['id'=>Auth::user()]) }}"
                                         class="nav-link text-decoration-none float-md-end float-lg-end float-xl-end float-xxl-end">
-                                        Home
+                                        {{__('Profile')}}
                                     </a>
                                 </li>
                             @else
